@@ -1,0 +1,8 @@
+version: "3"
+services:
+  child-app:
+    build:
+      context: .
+      dockerfile: router.Dockerfile
+    ports:
+      - 3300:80

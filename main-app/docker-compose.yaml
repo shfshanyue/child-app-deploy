@@ -1,0 +1,8 @@
+version: "3"
+services:
+  main-app:
+    build:
+      context: .
+      dockerfile: router.Dockerfile
+    ports:
+      - 3000:80
