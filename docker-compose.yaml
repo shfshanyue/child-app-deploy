@@ -1,0 +1,14 @@
+version: "3"
+services:
+  deploy-app:
+    build: .
+    ports:
+      - 3000:80
+  main-app:
+    build:
+      context: ./main-app
+      dockerfile: router.Dockerfile
+  child-app:
+    build:
+      context: ./child-app
+      dockerfile: router.Dockerfile
