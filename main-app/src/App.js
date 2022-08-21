@@ -7,9 +7,9 @@ function Home() {
     <div>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>当前在 Home 页面</h1>
-        <div>TEST CICD production</div>
-        <Link to="/about" className="App-link">About</Link>
+        <h1>当前在主应用 Home 页面</h1>
+        <Link to="/about" className="App-link">About 页面</Link>
+        <a href="/child/" className="App-link">Child 子应用</a>
       </header>
     </div>
   )
